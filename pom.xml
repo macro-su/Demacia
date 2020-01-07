@@ -8,9 +8,14 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>eureka</module>
+        <module>provider</module>
     </modules>
 
     <name>Demacia</name>
+
+    <properties>
+        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+    </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

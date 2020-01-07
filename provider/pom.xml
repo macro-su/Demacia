@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eureka</artifactId>
+    <artifactId>provider</artifactId>
     <packaging>jar</packaging>
 
-    <name>eureka</name>
+    <name>Spring Boot Blank Project (from https://github.com/making/spring-boot-blank)</name>
 
     <parent>
         <groupId>com.macro</groupId>
@@ -15,11 +15,13 @@
     </parent>
 
     <dependencies>
+        <!--服务客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
