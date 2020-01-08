@@ -22,6 +22,6 @@ public class HelloController {
 
     @GetMapping("hello")
     public String hello() {
-        return "hello,this message is from " + name + port;
+        return "hello,this message is from [" + name + "],port:" + port;
     }
 }
