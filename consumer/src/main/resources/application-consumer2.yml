@@ -1,0 +1,6 @@
+server:
+  port: 9002 #服务端口
+eureka:
+  instance:
+    instance-id: consumer-9002
+    prefer-ip-address: true     #访问路径可以显示IP地址

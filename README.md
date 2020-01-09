@@ -16,5 +16,5 @@
 Vm options:社区版开启彩色日志
 -Dspring.output.ansi.enabled=ALWAYS
 Projram arguments:设置profiles文件
--Dspring.profiles.active=server1
+--spring.profiles.active=server1
 

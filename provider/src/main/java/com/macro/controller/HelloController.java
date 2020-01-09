@@ -1,7 +1,7 @@
 package com.macro.controller;
 
+import com.macro.facade.Hello;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2020/01/08 17:36
  */
 @RestController
-public class HelloController {
+public class HelloController implements Hello {
 
     @Value("${spring.application.name}")
     private String name;
     @Value("${server.port}")
     private String port;
 
-    @GetMapping("hello")
+    @Override
     public String hello() {
         return "hello,this message is from [" + name + "],port:" + port;
     }
