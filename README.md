@@ -18,3 +18,8 @@ Vm options:社区版开启彩色日志
 Projram arguments:设置profiles文件
 --spring.profiles.active=server1
 
+config 6001 6002 6003
+eureka 7001 7002 7003
+provider 8001 8002 8003
+consumer 9001 9002 9003
+

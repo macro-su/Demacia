@@ -11,6 +11,7 @@
         <module>provider</module>
         <module>consumer</module>
         <module>api</module>
+        <module>config</module>
     </modules>
 
     <name>Demacia</name>

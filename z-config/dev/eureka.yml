@@ -1,0 +1,10 @@
+server:
+  port: 7001 #服务端口
+eureka:
+  instance:
+    hostname: server1 #唯一标识,不能和集群中其他的一样
+  client:
+    registerWithEureka: true #是否将自己注册到Eureka Server，默认为true
+    fetchRegistry: true #是否从Eureka Server获取注册信息，默认为true
+    service-url:
+      defaultZone: http://server2:7002/eureka/,http://server3:7003/eureka/ #服务注册的 URL
