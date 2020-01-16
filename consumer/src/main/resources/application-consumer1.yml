@@ -1,6 +1,0 @@
-server:
-  port: 9001 #服务端口
-eureka:
-  instance:
-    instance-id: consumer-9001
-    prefer-ip-address: true     #访问路径可以显示IP地址

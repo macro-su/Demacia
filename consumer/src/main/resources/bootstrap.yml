@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: consumer #服务应用名称
+  cloud:
+    config:
+      enabled: true
+      uri: ${config_uri:http://localhost:6001}
+      profile: dev
+      fail-fast: ${fail_fast:true}
+      label: ${git_branch:master}

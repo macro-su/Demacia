@@ -1,9 +1,2 @@
-spring:
-  application:
-    name: consumer #服务应用名称
-  profiles:
-    active: consumer1
-eureka:
-  client:
-    service-url:
-      defaultZone: http://server1:7001/eureka/,http://server2:7002/eureka/,http://server3:7003/eureka/ #服务注册的 URL
+server:
+  port: 9001 #服务端口

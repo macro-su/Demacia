@@ -1,6 +1,0 @@
-server:
-  port: 8002 #服务端口
-eureka:
-  instance:
-    instance-id: provider-8002
-    prefer-ip-address: true     #访问路径可以显示IP地址

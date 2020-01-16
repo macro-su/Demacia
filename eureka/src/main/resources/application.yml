@@ -1,9 +1,2 @@
-spring:
-  application:
-    name: eureka-server #服务应用名称
-  profiles:
-    active: server1
-eureka:
-  environment: work
-  server:
-    enable-self-preservation: false #是否开启保护模式
+server:
+  port: 7001 #服务端口
