@@ -23,3 +23,9 @@ eureka 7001 7002 7003
 provider 8001 8002 8003
 consumer 9001 9002 9003
 
+#### modules
+- api 接口定义，facade外观模式
+- config 配置中心
+- consumer 消费者
+- provider 生产者
+- eureka 注册中心
