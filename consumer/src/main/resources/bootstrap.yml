@@ -6,5 +6,3 @@ spring:
       enabled: true
       uri: ${config_uri:http://localhost:6001}
       profile: dev
-      fail-fast: ${fail_fast:true}
-      label: ${git_branch:master}

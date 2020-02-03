@@ -1,8 +1,10 @@
 package com.macro.controller;
 
+import com.macro.common.ServerConfig;
 import com.macro.facade.Hello;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author suhong
@@ -15,13 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController implements Hello {
 
-    @Value("${spring.application.name}")
-    private String name;
-    @Value("${server.port}")
-    private String port;
+
+    @Resource
+    private ServerConfig serverConfig;
 
     @Override
     public String hello() {
-        return "hello,this message is from [" + name + "],port:" + port;
+        return "生产者："+serverConfig.getUrl();
     }
 }
