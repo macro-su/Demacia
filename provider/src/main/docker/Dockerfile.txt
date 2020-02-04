@@ -2,6 +2,6 @@ FROM java:8
 
 VOLUME /tmp
 ADD provider.jar /opt/provider/
-EXPOSE 8080
+EXPOSE 8001
 WORKDIR /opt/provider/
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-Xms512m", "-Xmx1g", "-jar", "provider.jar"]
