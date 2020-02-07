@@ -13,6 +13,7 @@
         <module>api</module>
         <module>config</module>
         <module>zuul</module>
+        <module>zipkin</module>
     </modules>
 
     <name>Demacia</name>
@@ -23,6 +24,7 @@
         <docker.repostory>registry.cn-hangzhou.aliyuncs.com</docker.repostory>
         <docker.registry.name>macrosu</docker.registry.name>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
+        <zipkin.version>2.12.2</zipkin.version>
     </properties>
 
     <parent>

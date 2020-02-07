@@ -10,6 +10,7 @@
         <module name="api" />
         <module name="provider" />
         <module name="config" />
+        <module name="zipkin" />
         <module name="eureka" />
         <module name="consumer" />
       </profile>
@@ -21,6 +22,7 @@
       <module name="Demacia" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="provider" target="1.8" />
+      <module name="zipkin" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -32,6 +34,7 @@
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="provider" options="-parameters" />
+      <module name="zipkin" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
